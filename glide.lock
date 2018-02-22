@@ -1,5 +1,5 @@
-hash: fcaf5df5db28d4a16f5c7b37ff211b97550c6eae909ebaad509c5b3badb42729
-updated: 2018-02-23T00:14:36.624205091+08:00
+hash: cf7bbdfb2bac716ad5202eb3aa2fd53aff0a7f6e6e83cf30d6ca2be8094b8b2f
+updated: 2018-02-23T00:40:04.685836053+08:00
 imports:
 - name: github.com/casbin/casbin
   version: 3a17f2855cc12ad36fd614c590b9d18f46dfd65d
@@ -17,4 +17,15 @@ imports:
   version: 035c07716cd373d88456ec4d701402df52584cb4
 - name: github.com/sirupsen/logrus
   version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
+- name: github.com/urfave/cli
+  version: cfb38830724cc34fedffe9a2a29fb54fa9169cd1
+- name: golang.org/x/crypto
+  version: 432090b8f568c018896cd8a0fb0345872bbac6ce
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/sys
+  version: 37707fdb30a5b38865cfb95e5aab41707daec7fd
+  subpackages:
+  - unix
+  - windows
 testImports: []
