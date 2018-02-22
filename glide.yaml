@@ -1,0 +1,18 @@
+package: gin-boilerplate
+import:
+- package: github.com/gin-gonic/gin
+  version: ^1.2.0
+- package: github.com/dgrijalva/jwt-go
+  version: ^3.1.0
+- package: github.com/joho/godotenv
+  version: ^1.2.0
+- package: github.com/sirupsen/logrus
+  version: ^1.0.4
+- package: github.com/casbin/casbin
+  version: ^1.4.0
+- package: github.com/jinzhu/gorm
+  version: ^1.0.0
+- package: github.com/mattes/migrate
+  version: ^3.0.1
+- package: github.com/jteeuwen/go-bindata
+  version: ^3.0.7
