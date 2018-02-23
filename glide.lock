@@ -1,16 +1,23 @@
 hash: 3a6ff865d4eb009daf89feca5b0f6e42c7075b5cc0c92910047f62d6f6d0a68a
-updated: 2018-02-23T16:50:35.950288603+08:00
+updated: 2018-02-23T17:30:21.401878114+08:00
 imports:
 - name: github.com/casbin/casbin
   version: 3a17f2855cc12ad36fd614c590b9d18f46dfd65d
 - name: github.com/dgrijalva/jwt-go
   version: dbeaa9332f19a944acb5736b4456cfcc02140e29
+  subpackages:
+  - request
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/contrib
   version: dccbb4a462e965297e21372a9ad3ea05e0df3e5f
   subpackages:
   - jwt
 - name: github.com/gin-gonic/gin
   version: d459835d2b077e44f7c9b453505ee29881d5d12d
+  subpackages:
+  - binding
+  - render
 - name: github.com/golang-migrate/migrate
   version: 22f249514de9aa3f8a720a7cabbdd45d294f83a1
   subpackages:
@@ -19,6 +26,10 @@ imports:
   - source
   - source/file
   - source/go-bindata
+- name: github.com/golang/protobuf
+  version: bbd03ef6da3a115852eaf24c8a1c46aeb39aa175
+  subpackages:
+  - proto
 - name: github.com/jinzhu/gorm
   version: 5174cc5c242a728b435ea2be8a2f7f998e15429b
 - name: github.com/joho/godotenv
@@ -29,8 +40,14 @@ imports:
   version: 88edab0803230a3898347e77b474f8c1820a1f20
   subpackages:
   - oid
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/sirupsen/logrus
   version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
+- name: github.com/ugorji/go
+  version: 0076dd9cb1a958c695ab9190b34cc2f1296f2db2
+  subpackages:
+  - codec
 - name: github.com/urfave/cli
   version: cfb38830724cc34fedffe9a2a29fb54fa9169cd1
 - name: golang.org/x/crypto
@@ -42,4 +59,8 @@ imports:
   subpackages:
   - unix
   - windows
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/yaml.v2
+  version: d670f9405373e636a5a2765eea47fac0c9bc91a4
 testImports: []
