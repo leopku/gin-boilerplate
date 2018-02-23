@@ -68,7 +68,8 @@ func init() {
 		},
 		Action: func(c *cli.Context) error {
       port := c.String("port")
-			logrus.Info(port)
+      route := NewRoute()
+      route.Run(":" + port)
 			return nil
 		},
 	}

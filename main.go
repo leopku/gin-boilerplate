@@ -12,7 +12,7 @@ import (
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		logrus.Info("Loading .env error, now continue starting program with default value...")
+		logrus.Warn("Loading .env error, now continue starting program with default value...")
 	}
 
 	app := cli.NewApp()
