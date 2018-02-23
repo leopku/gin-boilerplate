@@ -1,5 +1,5 @@
-hash: cf7bbdfb2bac716ad5202eb3aa2fd53aff0a7f6e6e83cf30d6ca2be8094b8b2f
-updated: 2018-02-23T00:40:04.685836053+08:00
+hash: ab03f5f5192a2b302926ce6dba30945a06795c029c7bd93c50edfbdd7ea53bd8
+updated: 2018-02-23T15:31:10.221966604+08:00
 imports:
 - name: github.com/casbin/casbin
   version: 3a17f2855cc12ad36fd614c590b9d18f46dfd65d
@@ -7,24 +7,30 @@ imports:
   version: dbeaa9332f19a944acb5736b4456cfcc02140e29
 - name: github.com/gin-gonic/gin
   version: d459835d2b077e44f7c9b453505ee29881d5d12d
+- name: github.com/golang-migrate/migrate
+  version: 22f249514de9aa3f8a720a7cabbdd45d294f83a1
+  subpackages:
+  - database/postgres
+  - source/file
+  - source/go-bindata
 - name: github.com/jinzhu/gorm
   version: 5174cc5c242a728b435ea2be8a2f7f998e15429b
 - name: github.com/joho/godotenv
   version: a79fa1e548e2c689c241d10173efd51e5d689d5b
 - name: github.com/jteeuwen/go-bindata
   version: bbd0c6e271208dce66d8fda4bc536453cd27fc4a
-- name: github.com/mattes/migrate
-  version: 035c07716cd373d88456ec4d701402df52584cb4
+- name: github.com/lib/pq
+  version: 88edab0803230a3898347e77b474f8c1820a1f20
 - name: github.com/sirupsen/logrus
   version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
 - name: github.com/urfave/cli
   version: cfb38830724cc34fedffe9a2a29fb54fa9169cd1
 - name: golang.org/x/crypto
-  version: 432090b8f568c018896cd8a0fb0345872bbac6ce
+  version: 49796115aa4b964c318aad4f3084fdb41e9aa067
   subpackages:
   - ssh/terminal
 - name: golang.org/x/sys
-  version: 37707fdb30a5b38865cfb95e5aab41707daec7fd
+  version: c1138c84af3a9927aee1a1b8b7ce06c9b7ea52bc
   subpackages:
   - unix
   - windows

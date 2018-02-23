@@ -12,9 +12,14 @@ import:
   version: ^1.4.0
 - package: github.com/jinzhu/gorm
   version: ^1.0.0
-- package: github.com/mattes/migrate
-  version: ^3.0.1
 - package: github.com/jteeuwen/go-bindata
   version: ^3.0.7
 - package: github.com/urfave/cli
   version: ^1.20.0
+- package: github.com/lib/pq
+- package: github.com/golang-migrate/migrate
+  version: ^3.2.0
+  subpackages:
+  - database/postgres
+  - source/file
+  - source/go-bindata
