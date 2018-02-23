@@ -1,16 +1,22 @@
-hash: ab03f5f5192a2b302926ce6dba30945a06795c029c7bd93c50edfbdd7ea53bd8
-updated: 2018-02-23T15:31:10.221966604+08:00
+hash: 3a6ff865d4eb009daf89feca5b0f6e42c7075b5cc0c92910047f62d6f6d0a68a
+updated: 2018-02-23T16:50:35.950288603+08:00
 imports:
 - name: github.com/casbin/casbin
   version: 3a17f2855cc12ad36fd614c590b9d18f46dfd65d
 - name: github.com/dgrijalva/jwt-go
   version: dbeaa9332f19a944acb5736b4456cfcc02140e29
+- name: github.com/gin-gonic/contrib
+  version: dccbb4a462e965297e21372a9ad3ea05e0df3e5f
+  subpackages:
+  - jwt
 - name: github.com/gin-gonic/gin
   version: d459835d2b077e44f7c9b453505ee29881d5d12d
 - name: github.com/golang-migrate/migrate
   version: 22f249514de9aa3f8a720a7cabbdd45d294f83a1
   subpackages:
+  - database
   - database/postgres
+  - source
   - source/file
   - source/go-bindata
 - name: github.com/jinzhu/gorm
@@ -21,6 +27,8 @@ imports:
   version: bbd0c6e271208dce66d8fda4bc536453cd27fc4a
 - name: github.com/lib/pq
   version: 88edab0803230a3898347e77b474f8c1820a1f20
+  subpackages:
+  - oid
 - name: github.com/sirupsen/logrus
   version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
 - name: github.com/urfave/cli

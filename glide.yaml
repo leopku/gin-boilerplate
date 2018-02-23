@@ -23,3 +23,6 @@ import:
   - database/postgres
   - source/file
   - source/go-bindata
+- package: github.com/gin-gonic/contrib
+  subpackages:
+  - jwt
