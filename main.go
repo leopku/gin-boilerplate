@@ -1,10 +1,10 @@
 package main
 
 import (
+  "time"
 	"os"
-	"time"
 
-	"github.com/joho/godotenv"
+  "github.com/joho/godotenv"
   "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 )
@@ -28,7 +28,8 @@ func main() {
 	app.Copyright = "(c) 2018 leopku"
 	app.Commands = []cli.Command{
 		dooCmd,
-		servCmd,
+    migrateCmd,
+    servCmd,
 	}
 
 	app.Run(os.Args)

@@ -1,13 +1,21 @@
 package main
 
 import (
-	"github.com/sirupsen/logrus"
+  // "database/sql"
+
+  "github.com/golang-migrate/migrate"
+  _ "github.com/golang-migrate/migrate/database/postgres"
+  _ "github.com/golang-migrate/migrate/source/file"
+  _ "github.com/lib/pq"
+
+  "github.com/sirupsen/logrus"
 	"github.com/urfave/cli"
 )
 
 var (
-	dooCmd  cli.Command
-	servCmd cli.Command
+  dooCmd      cli.Command
+  migrateCmd  cli.Command
+  servCmd     cli.Command
 )
 
 func init() {
@@ -26,7 +34,26 @@ func init() {
 			logrus.Info(c.String("lang"))
 			return nil
 		},
-	}
+  }
+
+  migrateCmd = cli.Command{
+    Name: "migrate",
+    Usage: "migrate database",
+    Action:func(c *cli.Context) error {
+      // db, err := sql.Open("postgres", "postgres://gin:12345678@localhost/gin?sslmode=disable")
+
+      m, err := migrate.New(
+        "file://./migrations",
+        "postgres://gin:12345678@localhost/postgres?sslmode=disable",
+      )
+      if err != nil {
+        logrus.Error("migration error: " + err.Error())
+        return err
+      }
+      m.Up()
+      return nil
+    },
+  }
 
 	servCmd = cli.Command{
 		Name:  "serve",
@@ -40,7 +67,8 @@ func init() {
 			},
 		},
 		Action: func(c *cli.Context) error {
-			logrus.Info(c.String("port"))
+      port := c.String("port")
+			logrus.Info(port)
 			return nil
 		},
 	}
