@@ -1,5 +1,5 @@
-hash: 3a6ff865d4eb009daf89feca5b0f6e42c7075b5cc0c92910047f62d6f6d0a68a
-updated: 2018-02-24T01:10:14.59908091+08:00
+hash: 8631ff85e57a7164676b29f817b32689b3c6b1ace16ced0cbab98cbb0f1b57b3
+updated: 2018-03-04T04:03:33.410828846Z
 imports:
 - name: github.com/casbin/casbin
   version: 3a17f2855cc12ad36fd614c590b9d18f46dfd65d
@@ -16,6 +16,13 @@ imports:
   subpackages:
   - binding
   - render
+- name: github.com/go-oauth2/oauth2
+  version: 5e9ac5390465e2a0da268f647d78572797da9fa6
+  subpackages:
+  - manage
+  - models
+  - server
+  - store
 - name: github.com/golang-migrate/migrate
   version: 22f249514de9aa3f8a720a7cabbdd45d294f83a1
   subpackages:
@@ -29,11 +36,13 @@ imports:
   subpackages:
   - proto
 - name: github.com/jinzhu/gorm
-  version: 5174cc5c242a728b435ea2be8a2f7f998e15429b
+  version: 6ed508ec6a4ecb3531899a69cbc746ccf65a4166
 - name: github.com/joho/godotenv
   version: a79fa1e548e2c689c241d10173efd51e5d689d5b
 - name: github.com/jteeuwen/go-bindata
   version: bbd0c6e271208dce66d8fda4bc536453cd27fc4a
+- name: github.com/kelseyhightower/envconfig
+  version: f611eb38b3875cc3bd991ca91c51d06446afa14c
 - name: github.com/lib/pq
   version: 88edab0803230a3898347e77b474f8c1820a1f20
   subpackages:
@@ -43,22 +52,22 @@ imports:
 - name: github.com/sirupsen/logrus
   version: d682213848ed68c0a260ca37d6dd5ace8423f5ba
 - name: github.com/ugorji/go
-  version: 9af07b20357a7afd7d5894d25f406c4e07338089
+  version: 16f09ef744fd4227190f626f14cfdefb14362b3b
   subpackages:
   - codec
 - name: github.com/urfave/cli
   version: cfb38830724cc34fedffe9a2a29fb54fa9169cd1
 - name: golang.org/x/crypto
-  version: 49796115aa4b964c318aad4f3084fdb41e9aa067
+  version: ed5229da99e3a6df35c756cd64b6982d19505d86
   subpackages:
   - ssh/terminal
 - name: golang.org/x/sys
-  version: c1138c84af3a9927aee1a1b8b7ce06c9b7ea52bc
+  version: dd2ff4accc098aceecb86b36eaa7829b2a17b1c9
   subpackages:
   - unix
   - windows
 - name: gopkg.in/go-playground/validator.v8
   version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
 - name: gopkg.in/yaml.v2
-  version: d670f9405373e636a5a2765eea47fac0c9bc91a4
+  version: 7f97868eec74b32b0982dd158a51a446d1da7eb5
 testImports: []
